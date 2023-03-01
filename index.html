@@ -6,7 +6,7 @@
   const buttons = Array.from(document.querySelectorAll('a.nut-utm-thang'))
   buttons.forEach(button => {
 
-    button.href = button.href.replace('thangtracking', newId)
+    button.href = button.href.replace('thangtracking', newId).replaceAll('%20', '').replaceAll(' ','')
   });
 });
 </script>
